@@ -1,22 +1,10 @@
 from time import sleep
 
-from gpiozero import LED, PWMLED
-
-red_led = PWMLED(17)
+from gpiozero import RGBLED, LED, PWMLED
 
 
-def led_on():
-    red_led.on()
+led = RGBLED(17, 27, 22)
 
 
-def led_off():
-    red_led.off()
 
 
-while True:
-    for i in range(0, 255):
-        sleep(0.01)
-        red_led.value = i
-    for i in range(255, 0):
-        sleep(0.01)
-        red_led.value = i

@@ -1,9 +1,11 @@
 from time import sleep
 
-from factorio_zone_turret.pi_utils import led_off, led_on
+from colorzero import Color
+
+from factorio_zone_turret.pi_utils import led
+
 
 while True:
-    led_on()
-    sleep(5)
-    led_off()
-    sleep(5)
+    for color in range(0, 360):  
+        led.color = Color.from_hsv(color / 360, 1, 0.5)  
+        sleep(0.01)

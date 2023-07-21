@@ -6,12 +6,12 @@ led = RGBLED(17, 27, 22)
 
 
 def turn_yellow():
-    led.color = Color.from_rgb(255, 215, 0)
+    led.color = Color.from_rgb_bytes(255, 30, 0)
 
 
 def turn_green():
-    led.color = Color.from_rgb(34, 139, 34)
+    led.color = Color.from_rgb_bytes(5, 60, 0)
 
 
 def turn_red():
-    led.color = Color.from_rgb(139, 0, 0)
+    led.color = Color.from_rgb_bytes(255, 0, 0)

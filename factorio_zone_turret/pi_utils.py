@@ -1,6 +1,4 @@
-from time import sleep
-
-from gpiozero import RGBLED, LED, PWMLED
+from gpiozero import RGBLED
 
 
 led = RGBLED(17, 27, 22)

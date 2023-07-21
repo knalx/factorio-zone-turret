@@ -1,11 +1,11 @@
 from time import sleep
 
-from colorzero import Color
-
-from factorio_zone_turret.pi_utils import led
-
+from factorio_zone_turret.pi_utils import turn_green, turn_red, turn_yellow
 
 while True:
-    for color in range(0, 360):  
-        led.color = Color.from_hsv(color / 360, 1, 0.5)  
-        sleep(0.01)
+    turn_yellow()
+    sleep(1)
+    turn_red()
+    sleep(1)
+    turn_green()
+    sleep(1)
